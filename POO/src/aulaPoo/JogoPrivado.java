@@ -3,16 +3,16 @@ package aulaPoo;
 public class JogoPrivado {
     public static void main(String[] args) {
 
-        MarioPrivado jogador2 = new MarioPrivado();
-        jogador2.nome = "Luigi";
-        jogador2.altura = "Alto";
-        jogador2.cor = "Verde";
-        jogador2.vidas = 5;
+        MarioPrivado jogador1 = new MarioPrivado();
+        MarioPrivado jogador2 = new MarioPrivado("Luigi", 1.75, 40, 100);
+        jogador1.perderEstamina();
+        jogador1.crescer();
+        jogador1.status();
 
+        jogador2.perderEstamina();
+        jogador2.ganharEstamina();
+        jogador2.crescer();
         jogador2.status();
-        jogador2.superPoderes();
-        jogador2.morrer();
-        jogador2.continuar();
 
     }
 }
